@@ -1,24 +1,15 @@
 import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
-import { PageName } from './type'; 
+import { PageName } from './types'; 
 
-const PageTemplate: React.FC<{ title: string }> = ({ title }) => (
-  <div className="bg-white p-8 rounded-lg shadow-md">
-    <h1 className="font-bold text-gray-900 text-3xl">{title}</h1>
-    <hr className="my-4" />
-    <p>Conteúdo da página "{title}" vai aqui...</p>
-  </div>
-);
-
-const Book = () => <PageTemplate title="Book" />;
-const Description = () => <PageTemplate title="Description" />;
-const Readers = () => <PageTemplate title="Readers" />;
-const Author = () => <PageTemplate title="Author" />;
-const MyFriend = () => <PageTemplate title="My Friend" />;
-
+import Book from './pages/Book';
+import Description from './pages/Description';
+import Readers from './pages/Readers';
+import Author from './pages/Author';
+import MyFriend from './pages/MyFriend';
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState<PageName>('description');
+  const [currentPage, setCurrentPage] = useState<PageName>('book'); 
 
   const renderCurrentPage = () => {
     switch (currentPage) {
@@ -33,17 +24,15 @@ const App = () => {
       case 'myFriend':
         return <MyFriend />;
       default:
-        return <Description />; 
+        return <Book />; 
     }
   };
 
   return (
     <div className="bg-gray-100 min-h-screen flex font-sans">
       <Sidebar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      
-      <main className="flex-1 p-8">
-        {renderCurrentPage()}
-      </main>
+
+      {renderCurrentPage()}
     </div>
   );
 };

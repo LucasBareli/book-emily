@@ -1,6 +1,6 @@
 import React from 'react';
 import { HomeIcon, BookOpenIcon, LibraryIcon, UserGroupIcon } from "./Icon"; 
-import { PageName } from '../type'; 
+import { PageName } from '../types'; 
 
 interface SidebarProps {
   currentPage: PageName;
