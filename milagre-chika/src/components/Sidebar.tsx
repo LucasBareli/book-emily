@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeIcon, BookOpenIcon, LibraryIcon, UserGroupIcon } from "./Icon"; 
+import { HomeIcon, BookOpenIcon, UserGroupIcon } from "./Icon"; 
 import type { PageName } from '../App.tsx';
 
 interface SidebarProps {
@@ -25,8 +25,7 @@ const SidebarItem: React.FC<{
 const Sidebar: React.FC<SidebarProps> = ({ currentPage, setCurrentPage }) => {
   const navItems: { key: PageName; label: string; icon: React.ReactNode; }[] = [
     { key: 'book', label: 'Book', icon: <HomeIcon /> },
-    { key: 'description', label: 'Description', icon: <BookOpenIcon /> },
-    { key: 'readers', label: 'Readers', icon: <LibraryIcon /> },
+    { key: 'readers', label: 'Readers', icon: <BookOpenIcon /> },
     { key: 'author', label: 'Author', icon: <UserGroupIcon /> }, 
     { key: 'myFriend', label: 'My Friend', icon: <UserGroupIcon /> },
   ];

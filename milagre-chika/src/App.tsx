@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
-
 import Book from './pages/Book';
-import Description from './pages/Description';
 import Readers from './pages/Readers';
 import Author from './pages/Author';
 import MyFriend from './pages/MyFriend';
 
-export type PageName = 'book' | 'description' | 'readers' | 'author' | 'myFriend';
+export type PageName = 'book' | 'readers' | 'author' | 'myFriend';
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState<PageName>('book'); 
@@ -16,8 +14,6 @@ const App = () => {
     switch (currentPage) {
       case 'book':
         return <Book />;
-      case 'description':
-        return <Description />;
       case 'readers':
         return <Readers />;
       case 'author':
