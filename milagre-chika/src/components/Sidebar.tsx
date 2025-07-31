@@ -1,6 +1,6 @@
 import React from 'react';
 import { HomeIcon, BookOpenIcon, LibraryIcon, UserGroupIcon } from "./Icon"; 
-import { PageName } from '../App.tsx'; 
+import type { PageName } from '../App.tsx';
 
 interface SidebarProps {
   currentPage: PageName;
@@ -15,7 +15,7 @@ const SidebarItem: React.FC<{
 }> = ({ icon, label, isActive, onClick }) => (
   <button 
     onClick={onClick} 
-    className={`flex items-center w-full text-left space-x-3 px-4 py-3 rounded-lg transition-colors ${isActive ? 'bg-blue-100 text-blue-600 font-bold' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'}`}
+    className={`flex items-center w-full text-left space-x-3 px-4 py-3 rounded-lg cursor-pointer transition-colors ${isActive ? 'bg-blue-100 text-blue-600 font-bold' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'}`}
   >
     {icon}
     <span>{label}</span>

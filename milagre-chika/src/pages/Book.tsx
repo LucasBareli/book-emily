@@ -4,6 +4,7 @@ import CategoryPill from '../components/Category';
 import BookCard from '../components/BookCard';
 import { HeartIcon, ChevronRightIcon } from '../components/Icon';
 
+// Lista de outros livros do mesmo autor. Está correta.
 const otherBooks = [
   { coverUrl: "https://m.media-amazon.com/images/I/819HSI536KL._SL1500_.jpg", title: "A Última Grande Lição", author: "Mitch Albom" },
   { coverUrl: "https://m.media-amazon.com/images/I/71y+8mZgDNL._SL1500_.jpg", title: "As Cinco Pessoas que Você Encontra no Céu", author: "Mitch Albom" },
@@ -16,15 +17,16 @@ const Book: React.FC = () => {
   return (
     <main className="flex-1 p-4 sm:p-8">
       <div className="w-full h-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 flex flex-col">
-        {/* Banner Principal */}
+        {/* Banner Principal - Informações atualizadas */}
         <div 
           className="relative w-full h-56 rounded-2xl bg-cover bg-center text-white p-6 sm:p-8 flex flex-col justify-end"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2693&auto=format&fit=crop')" }}
+          // Imagem da capa do livro "Um Milagre Chamado Chika"
+          style={{ backgroundImage: "url('https://m.media-amazon.com/images/I/810dD4hFwML._SL1500_.jpg')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent rounded-2xl"></div>
           <div className="relative z-10">
             <h1 className="text-3xl sm:text-4xl font-bold">Um Milagre Chamado Chika</h1>
-            <p className="text-md sm:text-lg">- Mitch Albom</p>
+            <p className="text-md sm:text-lg">de Mitch Albom</p>
             <div className="mt-4 flex items-center space-x-4">
               <button className="bg-white text-black font-bold px-6 py-2 rounded-full hover:bg-gray-200 transition text-sm">
                 Ouvir Agora
@@ -45,6 +47,7 @@ const Book: React.FC = () => {
                 <h3 className="text-2xl font-bold text-gray-800">Categoria</h3>
                 <a href="#" className="text-sm font-semibold text-gray-500 hover:text-blue-500">Ver todos</a>
               </div>
+              {/* Categorias adequadas para o livro */}
               <div className="flex space-x-3 overflow-x-auto pb-2">
                 <CategoryPill label="História Real" />
                 <CategoryPill label="Inspirador" />
