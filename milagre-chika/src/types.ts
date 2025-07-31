@@ -1,1 +1,0 @@
-export type PageName = 'book' | 'description' | 'readers' | 'author' | 'myFriend';
