@@ -1,14 +1,14 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home/home';
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import DashboardPage from './pages/Dashboard';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Home />}>Home</Route>
-      </Routes>
-    </Router >
-  )
+    <div className="bg-gray-100 min-h-screen flex font-sans">
+      <Sidebar />
+      <DashboardPage />
+    </div>
+  );
 }
 
 export default App;
