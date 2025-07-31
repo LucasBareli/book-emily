@@ -12,7 +12,7 @@ const otherBooks = [
   { coverUrl: "https://m.media-amazon.com/images/I/8157i228O3L._SL1500_.jpg", title: "O Primeiro Telefonema do Céu", author: "Mitch Albom" },
 ];
 
-const DashboardPage: React.FC = () => {
+const Book: React.FC = () => {
   return (
     <main className="flex-1 p-4 sm:p-8">
       <div className="w-full h-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 flex flex-col">
@@ -76,4 +76,4 @@ const DashboardPage: React.FC = () => {
   );
 }
 
-export default DashboardPage;
+export default Book;
