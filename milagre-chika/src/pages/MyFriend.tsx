@@ -1,4 +1,10 @@
 import React from 'react';
+import Emily from "../assets/emily.png";
+import Icon1 from '../assets/Icon1.png';
+import Icon2 from '../assets/Icon2.png';
+import Icon3 from '../assets/Icon3.png';
+import Icon4 from '../assets/Icon4.png';
+import Icon5 from '../assets/Icon5.png';
 
 const MyFriend: React.FC = () => (
   <main className="flex-1 p-4 sm:p-8 bg-gray-50">
@@ -8,11 +14,10 @@ const MyFriend: React.FC = () => (
 
         <div className="lg:col-span-1">
           <div className="mb-6">
-            <div 
-              className="w-48 h-48 rounded-full bg-gray-200 mx-auto flex items-center justify-center border-4 border-white shadow-lg"
-              // `style={{ backgroundImage: url(suaImagem) }}`
+            <div
+              className="w-100 h-150 rounded-2xl bg-cover bg-center bg-no-repeat mx-auto flex items-center justify-center shadow-lg"
+              style={{ backgroundImage: `url(${Emily})` }}
             >
-              <span className="text-gray-400">Foto da Emily</span>
             </div>
           </div>
         </div>
@@ -56,22 +61,56 @@ const MyFriend: React.FC = () => (
           <section className="mt-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Coisas que ela gosta</h2>
             <div className="grid grid-cols-3 sm:grid-cols-5 gap-4">
-              <div className="w-full h-24 bg-gray-200 rounded-lg flex items-center justify-center text-xs text-gray-400">Foto 1</div>
-              <div className="w-full h-24 bg-gray-200 rounded-lg flex items-center justify-center text-xs text-gray-400">Foto 2</div>
-              <div className="w-full h-24 bg-gray-200 rounded-lg flex items-center justify-center text-xs text-gray-400">Foto 3</div>
-              <div className="w-full h-24 bg-gray-200 rounded-lg flex items-center justify-center text-xs text-gray-400">Foto 4</div>
-              <div className="w-full h-24 bg-gray-200 rounded-lg flex items-center justify-center text-xs text-gray-400">Foto 5</div>
+              <div className="w-full h-24 bg-gray-200 rounded-lg">
+                <img
+                  src={Icon1}
+                  alt="Descrição do Ícone 1"
+                  className="w-full h-full object-contain p-2" 
+                />
+              </div>
+
+              <div className="w-full h-24 bg-gray-200 rounded-lg">
+                <img
+                  src={Icon2}
+                  alt="Descrição do Ícone 2"
+                  className="w-full h-full object-contain p-2"
+                />
+              </div>
+
+              <div className="w-full h-24 bg-gray-200 rounded-lg">
+                <img
+                  src={Icon3}
+                  alt="Descrição do Ícone 3"
+                  className="w-full h-full object-contain p-2"
+                />
+              </div>
+
+              <div className="w-full h-24 bg-gray-200 rounded-lg">
+                <img
+                  src={Icon4}
+                  alt="Descrição do Ícone 4"
+                  className="w-full h-full object-contain p-2"
+                />
+              </div>
+
+              <div className="w-full h-24 bg-gray-200 rounded-lg">
+                <img
+                  src={Icon5}
+                  alt="Descrição do Ícone 5"
+                  className="w-full h-full object-contain p-2"
+                />
+              </div>
             </div>
           </section>
 
           <section className="mt-8">
-             <blockquote className="bg-gray-100 p-6 rounded-lg border-l-4 border-green-300">
-               <p className="text-lg italic text-gray-700">
-                 "Emily, apesar de você dar mancada eu gosto de você, tmj fi!!"
-               </p>
-               <footer className="text-right mt-4 font-semibold text-gray-600">- Lucas Bareli</footer>
-             </blockquote>
-           </section>
+            <blockquote className="bg-gray-100 p-6 rounded-lg border-l-4 border-green-300">
+              <p className="text-lg italic text-gray-700">
+                "Emily, apesar de você dar mancada eu gosto de você, tmj fi!!"
+              </p>
+              <footer className="text-right mt-4 font-semibold text-gray-600">- Lucas Bareli</footer>
+            </blockquote>
+          </section>
 
         </div>
       </div>

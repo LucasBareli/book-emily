@@ -53,18 +53,15 @@ const Book: React.FC = () => {
                   Descrição do Livro
                 </h3>
                 <div className="text-gray-700 text-base space-y-4">
+                  <h4>A Menina que Mudou Tudo.</h4>
                   <p>
-                    Chika Jeune nasceu três dias antes do devastador terremoto
-                    que assolou o Haiti em 2010. Aos cinco anos, com o
-                    diagnóstico de um tumor cerebral terminal, Mitch Albom e sua
-                    esposa, Janine, a trazem para sua casa, na esperança de
-                    encontrar uma cura.
+                    Imagine uma vida perfeitamente ordenada, onde tudo está no seu lugar. Agora, imagine uma criança vibrante e corajosa entrando nessa vida e mudando cada regra, cada prioridade, cada pedaço do seu coração. Essa criança é Chika Jeune.
                   </p>
                   <p>
-                    O que se segue é uma jornada de dois anos que forma uma
-                    família, ensina lições sobre amor e perda, e celebra a vida
-                    de uma menina inesquecível. Este livro é um memorial
-                    comovente sobre como uma criança pode mudar o mundo.
+                    Nascida às vésperas de uma tragédia nacional no Haiti e enfrentando sua própria batalha pessoal contra uma doença implacável, Chika nunca deixou que as sombras diminuíssem sua luz. Quando o autor Mitch Albom e sua esposa a acolhem, eles acreditam que estão lhe dando uma chance de lutar. Mal sabem eles que é Chika quem lhes dará o maior presente de todos: a chance de se tornarem pais.
+                  </p>
+                  <p>
+                    Este livro é um memorial poderoso e uma celebração da vida. É a história de como a busca por uma cura médica se cruza com a descoberta do amor incondicional. Ao longo de dois anos inesquecíveis, vemos um casal aprender a ser uma família e uma menina ensinar ao mundo o que é coragem. "Em Busca de Chika" é uma leitura essencial para quem já amou, já perdeu e acredita que até as vidas mais curtas podem deixar o maior dos legados.
                   </p>
                 </div>
               </div>
