@@ -5,20 +5,20 @@ import Readers from './pages/Readers';
 import Author from './pages/Author';
 import MyFriend from './pages/MyFriend';
 
-export type PageName = 'book' | 'readers' | 'author' | 'myFriend';
+export type PageName = 'livro' | 'leitores' | 'autor' | 'emily';
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState<PageName>('book'); 
+  const [currentPage, setCurrentPage] = useState<PageName>('livro'); 
 
   const renderCurrentPage = () => {
     switch (currentPage) {
-      case 'book':
+      case 'livro':
         return <Book />;
-      case 'readers':
+      case 'leitores':
         return <Readers />;
-      case 'author':
+      case 'autor':
         return <Author />;
-      case 'myFriend':
+      case 'emily':
         return <MyFriend />;
       default:
         return <Book />; 

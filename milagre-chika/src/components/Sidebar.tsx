@@ -15,7 +15,7 @@ const SidebarItem: React.FC<{
 }> = ({ icon, label, isActive, onClick }) => (
   <button 
     onClick={onClick} 
-    className={`flex items-center w-full text-left space-x-3 px-4 py-3 rounded-lg cursor-pointer transition-colors ${isActive ? 'bg-blue-100 text-blue-600 font-bold' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'}`}
+    className={`flex items-center w-full text-left space-x-3 px-4 py-3 rounded-lg cursor-pointer transition-colors ${isActive ? 'bg-blue-100 text-green-900 font-bold' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'}`}
   >
     {icon}
     <span>{label}</span>
@@ -24,10 +24,10 @@ const SidebarItem: React.FC<{
 
 const Sidebar: React.FC<SidebarProps> = ({ currentPage, setCurrentPage }) => {
   const navItems: { key: PageName; label: string; icon: React.ReactNode; }[] = [
-    { key: 'book', label: 'Book', icon: <HomeIcon /> },
-    { key: 'readers', label: 'Readers', icon: <BookOpenIcon /> },
-    { key: 'author', label: 'Author', icon: <UserGroupIcon /> }, 
-    { key: 'myFriend', label: 'My Friend', icon: <UserGroupIcon /> },
+    { key: 'livro', label: 'Livro', icon: <HomeIcon /> },
+    { key: 'leitores', label: 'Leitores', icon: <BookOpenIcon /> },
+    { key: 'autor', label: 'Autor', icon: <UserGroupIcon /> }, 
+    { key: 'emily', label: 'Emily', icon: <UserGroupIcon /> },
   ];
 
   return (
@@ -36,7 +36,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage, setCurrentPage }) => {
         <img className="h-12 w-12 rounded-full object-cover" src="./src/assets/bareli.jfif" alt="User" />
         <div>
           <h2 className="font-bold text-lg text-gray-800">Lucas Bareli</h2>
-          <span className="text-sm text-gray-500">Book lover</span>
+          <span className="text-sm text-gray-500">Amante de Livros</span>
         </div>
       </div>
       <nav className="flex-grow space-y-2">
