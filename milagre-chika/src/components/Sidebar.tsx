@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeIcon, BookOpenIcon, UserGroupIcon } from "./Icon"; 
+import { HomeIcon, BookOpenIcon, UserGroupIcon } from "./Icon";
 import type { PageName } from '../App.tsx';
 
 interface SidebarProps {
@@ -13,9 +13,9 @@ const SidebarItem: React.FC<{
   isActive?: boolean;
   onClick: () => void;
 }> = ({ icon, label, isActive, onClick }) => (
-  <button 
-    onClick={onClick} 
-    className={`flex items-center w-full text-left space-x-3 px-4 py-3 rounded-lg cursor-pointer transition-colors ${isActive ? 'bg-blue-100 text-green-900 font-bold' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'}`}
+  <button
+    onClick={onClick}
+    className={`flex items-center w-full text-left space-x-3 px-4 py-3 rounded-lg cursor-pointer transition-colors ${isActive ? 'bg-blue-100 text-green-900 font-bold' : 'text-gray-500 hover:bg-gray-100 hover:text-green-700'}`}
   >
     {icon}
     <span>{label}</span>
@@ -26,7 +26,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage, setCurrentPage }) => {
   const navItems: { key: PageName; label: string; icon: React.ReactNode; }[] = [
     { key: 'livro', label: 'Livro', icon: <HomeIcon /> },
     { key: 'leitores', label: 'Leitores', icon: <BookOpenIcon /> },
-    { key: 'autor', label: 'Autor', icon: <UserGroupIcon /> }, 
+    { key: 'autor', label: 'Autor', icon: <UserGroupIcon /> },
     { key: 'emily', label: 'Emily', icon: <UserGroupIcon /> },
   ];
 

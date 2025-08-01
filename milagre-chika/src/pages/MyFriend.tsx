@@ -20,7 +20,7 @@ const MyFriend: React.FC = () => (
         <div className="lg:col-span-2">
           <header className="mb-6">
             <h1 className="text-4xl font-bold text-gray-900">Emily Berti</h1>
-            <p className="text-xl text-blue-600 font-semibold">Fiote do Bareli</p>
+            <p className="text-xl text-green-900 font-semibold">Fiote do Bareli</p>
           </header>
 
           <section>
@@ -54,7 +54,7 @@ const MyFriend: React.FC = () => (
           </section>
 
           <section className="mt-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Galeria de Momentos</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Coisas que ela gosta</h2>
             <div className="grid grid-cols-3 sm:grid-cols-5 gap-4">
               <div className="w-full h-24 bg-gray-200 rounded-lg flex items-center justify-center text-xs text-gray-400">Foto 1</div>
               <div className="w-full h-24 bg-gray-200 rounded-lg flex items-center justify-center text-xs text-gray-400">Foto 2</div>
@@ -63,10 +63,9 @@ const MyFriend: React.FC = () => (
               <div className="w-full h-24 bg-gray-200 rounded-lg flex items-center justify-center text-xs text-gray-400">Foto 5</div>
             </div>
           </section>
-          
-           {/* Mensagem Pessoal */}
+
           <section className="mt-8">
-             <blockquote className="bg-gray-100 p-6 rounded-lg border-l-4 border-blue-300">
+             <blockquote className="bg-gray-100 p-6 rounded-lg border-l-4 border-green-300">
                <p className="text-lg italic text-gray-700">
                  "Emily, apesar de você dar mancada eu gosto de você, tmj fi!!"
                </p>
